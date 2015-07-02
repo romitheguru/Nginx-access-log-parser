@@ -46,8 +46,8 @@ def main():
 	# Log ID will uniquely indenfy a log file, it should be changed for a different log file
 	LogID = 111
 
-	username = 'root'
-	password = 'sha1'
+	username = 'user1'
+	password = 'pass1'
 	database = 'Logs_Statistics'
 
 
