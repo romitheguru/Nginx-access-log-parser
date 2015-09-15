@@ -1,0 +1,19 @@
+<html>
+<head>
+	<TITLE>Pageviews</TITLE>
+</head>
+<body bgcolor="#ffffddddd">
+	<h2>Pageviews and Requested URLs</h2>
+	<table border="5" width=40% cellpadding=5 bgcolor="white" bordercolor="green">
+		<tr>
+			<th>Requested Page's URL</th>
+			<th>Number of Pageviews</th>
+		</tr>
+		{% for some in entries %}
+			<tr align="center">
+				<td> {{some.key}} </td><td> {{some.value}} </td>
+			</tr>
+		{% endfor %}
+	</table>
+
+</body>
