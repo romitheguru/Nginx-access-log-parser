@@ -1,0 +1,19 @@
+<html>
+<head>
+	<TITLE>Status Overview</TITLE>
+</head>
+<body bgcolor="#ffffddddd">
+	<h2>Http Status Codes and their Frequency</h2>
+	<table border="5" width=40% cellpadding=5 bgcolor="white" bordercolor="green">
+		<tr>
+			<th>HTTP Status</th>
+			<th>Occurrence</th>
+		</tr>
+		{% for some in entries %}
+			<tr align="center">
+				<td> {{some.key}} </td><td> {{some.value}} </td>
+			</tr>
+		{% endfor %}
+	</table>
+
+</body>
