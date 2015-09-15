@@ -1,0 +1,19 @@
+<html>
+<head>
+	<TITLE>Pagevisits</TITLE>
+</head>
+<body bgcolor="#ffffddddd">
+	<h2>Unique Pagevisits and Refferals URLs</h2>
+	<table border="5" width=60% cellpadding=5 bgcolor="white" bordercolor="green">
+		<tr>
+			<th>Refferal's URL</th>
+			<th>Unique Page Visits</th>
+		</tr>
+		{% for some in entries %}
+			<tr>
+				<td> {{some.key}} </td><td align="center"> {{some.value}} </td>
+			</tr>
+		{% endfor %}
+	</table>
+
+</body>
