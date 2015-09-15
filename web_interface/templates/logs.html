@@ -1,0 +1,22 @@
+<html>
+<head>
+	<TITLE>Logs Overview</TITLE>
+</head>
+<body bgcolor="#ffffddddd">
+	<h2>Log Overview</h2>
+	Here is the data that we collected after analysing the Nginx's access log file.<br>
+	Total Entries = Number of entries in the Nginx access log file<br>
+	Processing Failures = Number of entries for which status code is not 200<br><br>
+	<table border="5" width=40% cellpadding=5 bgcolor="white" bordercolor="green">
+		<tr>
+			<th>Total Entries</th>
+			<th>Processing Failures</th>
+		</tr>
+		{% for some in entries %}
+			<tr align="center">
+				<td> {{some.key}} </td><td> {{some.value}} </td>
+			</tr>
+		{% endfor %}
+	</table>
+
+</body>
